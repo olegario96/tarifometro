@@ -21,7 +21,10 @@ div.calculate {
     text-align: center;
 }
 
+button {
+    margin-bottom: 20px;
+}
+
 p {
-    padding: 5px;
-    font-size: 35px;
+    font-size: 30px;
 }

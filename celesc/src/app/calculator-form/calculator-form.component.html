@@ -9,8 +9,11 @@
     <div class="calculate">
       <button type="button" class="btn btn-success" (click)="calculate();">Calcular</button>
     </div>
-    <div *ngIf="clicked">
+    <div *ngIf="clicked" class="alert alert-success">
       <p>O valor correto de sua fatura é: R${{ result }}</p>
+    </div>
+    <div *ngIf="error" class="alert alert-danger">
+      <p>Você deve informar o valor da sua fatura</p>
     </div>
   </form>
 </div>
