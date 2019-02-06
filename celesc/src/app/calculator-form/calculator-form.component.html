@@ -1,0 +1,16 @@
+<div class="container">
+  <h1>Calculadora Tarifa Celesc - Jan/2019</h1>
+  <form action="">
+    <div class="form-group">
+      <label>Consumo total</label>
+      <input type="number" class="form-control" [(ngModel)]="consuption" id="inputComsuption" name="consuption" required/>
+    </div>
+
+    <div class="calculate">
+      <button type="button" class="btn btn-success" (click)="calculate();">Calcular</button>
+    </div>
+    <div *ngIf="clicked">
+      <p>O valor correto de sua fatura é: R${{ result }}</p>
+    </div>
+  </form>
+</div>
