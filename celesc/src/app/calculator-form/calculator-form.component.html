@@ -1,7 +1,8 @@
 <a href="https://github.com/olegario96/escamboapp-api"><img width="149" height="149" src="https://github.blog/wp-content/uploads/2008/12/forkme_left_darkblue_121621.png?resize=149%2C149"
     class="attachment-full size-full" alt="Fork me on GitHub" data-recalc-dims="1"></a>
 <div class="container">
-  <h1>Calculadora Tarifa Celesc - Jan/2019</h1>
+  <h1>TARIFÔMETRO</h1>
+  <h2>Calculadora Tarifa residencial CELESC - Jan/2019</h2>
   <form action="">
     <div class="form-group">
       <label>Consumo total</label>
@@ -12,7 +13,7 @@
       <button type="button" class="btn btn-success" (click)="calculate();">Calcular</button>
     </div>
     <div *ngIf="clicked" class="alert alert-success">
-      <p>O valor correto de sua fatura é: R${{ result }}</p>
+      <p>O valor correto de sua fatura é: R$ {{ result }}</p>
     </div>
     <div *ngIf="error" class="alert alert-danger">
       <p>Você deve informar o valor da sua fatura</p>

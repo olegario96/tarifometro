@@ -21,9 +21,9 @@ export class CalculatorFormComponent implements OnInit {
       this.error = true;
     } else {
       if (this.consuption <= 150) {
-        this.result = this.consuption * 0.654;
+        this.result = parseFloat((this.consuption * 0.654).toFixed(2));
       } else {
-        this.result = 98.1 + ((this.consuption - 150) * 0.782);
+        this.result = parseFloat((98.1 + ((this.consuption - 150) * 0.782)).toFixed(2));
       }
       this.error = false;
       this.clicked = true;
